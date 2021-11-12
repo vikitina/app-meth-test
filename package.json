@@ -1,0 +1,24 @@
+{
+  "name": "app-meth-test",
+  "version": "1.0.0",
+  "description": "Let's say I have a database of scripts. Each script has an arbitrary number of dependencies.  The dependencies are expressed as a list of scriptIds that need to be executed before a given script.  There are no circular dependencies.  I want to come up with an execution plan so that I can run all of the scripts in a sane order.  Below is the script representation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikitina/app-meth-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikitina/app-meth-test/issues"
+  },
+  "homepage": "https://github.com/vikitina/app-meth-test#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.7"
+  },
+  "dependencies": {}
+}
