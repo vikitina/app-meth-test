@@ -1,12 +1,12 @@
-type tnewObj = {
+type tScript = {
     [key: string]: number[];
 }
 
 class DependencyScript {
-    preparedObject: tnewObj = {};
+    preparedObject: tScript = {};
 
     constructor( list: { scriptId: number; dependencies: number[] }[] ){
-        const preparedObject: tnewObj = {};
+        const preparedObject: tScript = {};
         list.forEach( function(item, i) {
             preparedObject[ list[i].scriptId ] = list[i].dependencies;
         });
@@ -33,7 +33,7 @@ class DependencyScript {
     }
     getAllDependenciesLists() {
         const preparedObject = this.preparedObject;
-        const allDependenciesLists: tnewObj = {};
+        const allDependenciesLists: tScript = {};
         for (let key in preparedObject) {
             allDependenciesLists[ key ] = this.getDependenciesList( key );
         }
